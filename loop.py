@@ -15,3 +15,12 @@ for color in colors:
 for item in colors:
     if item > 50 and isinstance(item,int):
         print(item)
+#loop with key value
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+
+for key, value in phone_numbers.items():
+    print("%s: %s" % (key, value))
+#values with conditions
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+for value in phone_numbers.values():
+    print(value.replace("+", "00"))
